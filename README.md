@@ -1,6 +1,6 @@
 # dutchdutch-ascend
 
-A Rust library for controlling [Dutch and Dutch](https://dutchdutch.com/) Ascend networked speakers.
+A Rust library for controlling [Dutch and Dutch](https://dutchdutch.com/) networked speakers.
 
 ## Features
 
@@ -200,30 +200,6 @@ println!("Room: {}", state.name);
 println!("Volume: {:.1} dB", state.gain.global);
 ```
 
-### Types
-
-The library exports comprehensive types for all speaker state:
-
-- `Room`: High-level room control interface
-- `RoomState`: Complete room state snapshot
-- `GainData`: Volume levels (global and per-position)
-- `MuteData`: Mute states (global and per-position)
-- `VoicingProfile`: Tone settings (bass, treble, sub)
-- `Preset`: Room preset configuration
-- `ChannelMapping`: Speaker channel configuration
-- `Device`: Physical speaker device information
-
-## Architecture
-
-The library is organized into several layers:
-
-- **Discovery**: Cloud-based room discovery via `wss://api.ascend.audio/`
-- **Client**: Connection management and room access
-- **Room**: High-level control API for speaker systems
-- **Connection**: Low-level WebSocket protocol handling
-- **Protocol**: JSON message structures
-- **Types**: Domain types and data structures
-
 ## Requirements
 
 - Rust 1.70 or later
@@ -240,14 +216,6 @@ This library communicates with Dutch and Dutch speakers using:
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-
-## Authors
-
-Dutch and Dutch
-
-## Contributing
-
-This is an unofficial library for Dutch and Dutch Ascend speakers. Contributions are welcome!
 
 ## Disclaimer
 
